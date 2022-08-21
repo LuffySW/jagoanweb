@@ -1,0 +1,147 @@
+*{
+    font-family: sans-serif;
+}
+
+#flex-food{
+    flex-basis: 60%;
+    padding: 1rem;
+}
+.food-category-icon{
+    flex-basis: 50%;
+    padding-left: 1rem;
+}
+
+.food-category-icon>img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.delivery-section{
+    margin-top: 6rem;
+}
+
+.delivery-icon{
+    flex-basis: 50%;
+    padding: 8rem;
+}
+
+.delivery-icon>img{
+    max-width: 100%;
+}
+
+.delivery-text{
+    flex-basis: 50%;
+}
+
+.delivery-text > img{
+    max-width: 100%;
+}
+
+.elipse-right{
+    flex: max-content;
+}
+
+.elipse-right>img{
+    max-width: 100%;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+.login-card{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    border: 1px solid #ccc;
+  
+  }
+  
+  .login-card-flex{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .login-card-form{
+    flex: 60%;
+    padding: 2rem;
+  }
+  
+  .form-group > input,button{
+    border-radius: none;
+    border: none;
+    width: 100%;
+    background-color:#FFC7C0;
+  }
+  
+  #login-button{
+    background-color:red;
+  }
+  
+  
+  .login-card-form-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .login-card-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 40%;
+    padding: 0.5rem 2rem;
+    background-color: #FFF4D6;
+  }
+  
+  .login-card-img-icon{
+    display: flex;
+    flex: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .login-card-img-icon > img{
+    max-width: 100%;
+  }
+  
+  .login-card-qr-text {
+    flex: 95%;
+    text-align: center;
+  }
+  
+  .link-button{
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  
+  .register > span{
+    color: rgb(94, 94, 94);
+    font-size: 12px;
+    margin-right: 0.25rem;
+  }
+
+  .container-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+
