@@ -63,6 +63,7 @@
     align-items: center;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
     border: 1px solid #ccc;
+    margin-bottom:6rem;
   
   }
   
@@ -78,13 +79,14 @@
   
   .form-group > input,button{
     border-radius: none;
-    border: none;
+    border: 1px solid #ccc;
     width: 100%;
-    background-color:#FFC7C0;
+
   }
   
   #login-button{
-    background-color:red;
+    background-color:#FFC7C0;
+    border:none;
   }
   
   
