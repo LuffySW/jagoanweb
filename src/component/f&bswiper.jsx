@@ -6,7 +6,7 @@ import { Card,Button } from 'react-bootstrap';
 export default function FBSwiper() {
     return (
         <div className="container py-4 px-4 justfy-content-center p-3" >
-            <Swiper spaceBetween={10} slidesPerView={4} freeMode={true}>
+            <Swiper spaceBetween={10} slidesPerView={5} freeMode={true}>
                 <SwiperSlide>
                     <Card className='p-0 overflow-hidden h-100 shadow'>
                         <Card.Img variant="top" src="https://th.bing.com/th/id/OIP.GUmTVPS2bDU2gZP3_3IPYwHaE7?pid=ImgDet&rs=1" />

@@ -3,7 +3,7 @@
 
 export default function Footer() {
     return (
-        <div className="footer w-100 p-5">
+        <div className="footer w-100 h-100 p-5">
             <div className="d-flex justify-content-center align-items-center">
                 <div className="footer-logo">
                     <img src={require("./assets/logo2.png")} alt="" />

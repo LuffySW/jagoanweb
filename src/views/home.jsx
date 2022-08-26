@@ -4,15 +4,13 @@ import MainSlider from "../component/mainSlider";
 import FBSwiper from "../component/f&bswiper";
 import Footer from "../component/footer";
 export default function Home() {
+
   return (
     <>
       <Navbar />
       <MainSlider />
       <div className="container">
         <div className="d-flex justify-content-center align-items-center">
-          <div className="elipse-right">
-            <img src={require("./assets/elipse-left.png")} alt="" />
-          </div>
           <div className="Food-category mt-5">
             <div className="d-flex flex-column justify-content-center align-items-center">
               <div className="d-flex">
@@ -83,9 +81,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="elipse-right">
-            <img src={require("./assets/elipse-right.png")} alt="" />
-          </div>
         </div>
         <div className="delivery-section">
           <div className="d-flex justify-content-between align-items-center">
@@ -97,7 +92,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <FBSwiper />
+        <div className="mt-5 mb-5">
+          <FBSwiper />
+          </div>
         <div className="delivery-section">
           <div className="d-flex justify-content-between align-items-center">
             <div className="delivery-icon">

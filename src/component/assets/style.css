@@ -84,11 +84,18 @@ nav{
 
 }
 
+.cart-footer-container{
+    background-color: red;
+
+}
+
+
 
 @media (max-width: 1920px){
     .container{
-        max-width: 100%;
-        padding: 0;
+        max-width: 1800px;
     }
+
+   
 }
     

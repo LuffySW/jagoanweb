@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import "./assets/style.css";
+import React,{useContext} from "react"
+import { AuthContext } from "../Auth";
+import app from "../base";
+import { confirmAlert } from "react-confirm-alert";
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 
 export default function Navbar() {
+    const {currentUser} = useContext(AuthContext)
+
+    console.log(currentUser)
+
     window.onscroll = function() {scrollFunction()};
  
     function scrollFunction() {
@@ -17,9 +26,25 @@ export default function Navbar() {
       }
     }
 
+    const SignOut = () => {
+        confirmAlert({
+            title: 'Keluar',
+            message: 'Anda yakin ingin keluar?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () =>{ app.auth().signOut() }
+                },
+                {
+                    label: 'No'
+                }
+            ]});
+    }
+
+    
   return (
     <header className="header sticky-top">
-        <div className="container">
+        <div className="container-m">
             <nav className="sticky" id="navbar">
                 <div className="d-flex justify-content-between align-items-center" id="navbar-layout">
                     <div className="navbar-brand">
@@ -41,8 +66,12 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="navbar-end">
-                        <Link to={"/login"} id="btn-login" className="btn btn-danger">Login</Link>
-                        <img src={require("./assets/Cart.png")} alt="" />
+                        <div className="d-flex align-items-center">
+                            {currentUser ? <button onClick={() => SignOut()} id="btn-login" className="btn btn-danger">Keluar</button>
+                                :<Link to={"/login"} id="btn-login" className="btn btn-danger">Masuk</Link>
+                            }
+                            <Link to='/cart'><img src={require("./assets/Cart.png")} alt="" /></Link>
+                        </div>
                     </div>
                 </div>
             </nav>
